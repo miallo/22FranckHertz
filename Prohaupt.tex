@@ -167,6 +167,7 @@ Praktikant: &  Michael Lohmann\\
 Das \textsc{Bohr}sche Atommodell war das erste, welches eine quantenmechanische Betrachtung des Atomes vornahm.
 Viele Zeitgenossen sahen es daher eher kritisch.
 Um so wichtiger, dass mit dem Franck-Hertz-Versuch 1913 erstmals eine experimentelle Überprüfung erfolgte.
+Dies soll im folgenden mit einem etwas anderen Aufbau erneut geschehen.
 
 \section{Theorie}
 \label{sec:theorie}
@@ -174,20 +175,33 @@ Um so wichtiger, dass mit dem Franck-Hertz-Versuch 1913 erstmals eine experiment
 Das Atommodell nach Nils \textsc{Bohr} sagt voraus, dass Elektronen auf quantisierten Bahnen um den Atomkern kreisen.
 Ohne die Quantenmechanik müsste durch die beschleunigte Ladung, da das Elektron auf der Kreisbahn der Zentripetalkraft ausgeliefert ist, elektromagnetische Strahlung ausgesand werden.
 Dies würde bedeuten, dass das Elektron immer mehr Energie verliert und schließlich in den Atomkern fallen müsste.
-Da dies offensichtlich nicht der Fall ist, entwickelte Bohr ausgehend von drei Postulaten sein Modell.
-Die Bahnen, in den Elektronen strahlungsfrei kreisen können sind gequantelt.
-Elektronen können von dem niedrigsten Energieniveau angeregt werden und in eine höhere Schale springen.
-Die dafür benötigte Energie entspricht der Differenz der Energie der beiden Schalen.
-Ein Lichtquant, welches diese besitzt, kann ein Elektron in genau diese Bahn anregen, indem es absorbiert wird.
-Entspricht die Energie nicht einem Übergang, so können sie nicht aufgenommen werden.
+Da dies offensichtlich nicht der Fall ist, entwickelte Bohr ausgehend von drei Postulaten sein Modell (nach \cite[S. 110 f.]{demtroeder3}):
+\begin{itemize}
+\item Der Drehimpulsbetrag des Elektrons ist quantisiert und kann nur in ganzzahligen vielfachen des Planckschen Wirkungsquantums $h$ vorkommen.
+\item Die Bahnen des Elektrons um den Atomkern auf denen sie sich strahlungsfrei bewegen sind Kreise, deren Radien gequantelt sind.
+\item Elektronen können durch Absorbtion von Photonen geeigneter Wellenlänge Energie aufnehmen und in energiereichere Bahnen gelangen.
+Entspricht die Energie nicht mindestens einem Übergang, so können sie nicht aufgenommen werden ($\Delta E=h\nu$ mit der Planck-Konstanten $h=6.626\si{\joule\second}$).
+Bei dem Relaxieren wird ein Photon eben dieser Wellenlänge emmitiert.
+\end{itemize}
+
+Statt mit Licht, kann man Atome auch mit Elektronen anregen.
+Dies funktioniert genau so, nur dass die Energie des Elektrons durch die kinetische bestimmt ist.
+Es können nun zwei Szenarien eintreten:
+\begin{itemize}
+\item Das Elektron hat weniger Energie, als für den kleinsten Übergang nötig wäre.
+Es kann daher keine Energie abgeben und stößt so total elastisch.
+Ledeglich seine Richtung kann sich geändert haben.
+\item Hat das Elektron genügend Energie, so kann es bei einem Stoß ein Teil dessen abgeben um das Atom anzuregen.
+Dies führt dazu, dass das Elektron Energie verliert und also langsamer wird.
+Dies entspricht einem inelastischem Stoß.
+\end{itemize}
+
 Strahlt man nun durch einen Stoff, so sieht man charakteristische "`Einbrüche"' in der Intensität bei Energien, welche genau einer Anregung in eine höhere Schale entsprechen.
-Relaxiert ein Elektron von einer höheren Bahn in eine energetisch niedrigere, so wird die Energie erneut in Form eines Lichtquants abgegeben, welcher die Energie hat, die es auch zur Anregung benötigte.
+Diese kann man vermessen um daraus Rückschlüsse über die Schalenstruktur zu erlangen.
 
-Die Energie eines Photons beträgt $E=h\nu$ mit der Planck-Konstanten $h=6.626\si{\joule\second}$ und der Frequenz $\nu$ des Photons.
-
-Wird einem Elektron genügend Energie hinzugefügt, so kann es den Einflussbereich des Atomes verlassen.
+Wird einem Elektron in einem Atom genügend Energie hinzugefügt, so kann es den Einflussbereich des Atomes verlassen.
 Dieses ist nun positiv geladen und wird Ion genannt.
-
+Die Energie, welche defür mindestens benötigt wird nennt man \textit{Ionisationsenergie}.
                                                                                                                                                                       
 \section{Durchführung}
 \label{sec:durchfuehrung}
@@ -204,6 +218,8 @@ Dies geschieht, bis $U_1=90\si\volt$ erreicht hat, oder eine Bogenentladung in d
 Sollte dies geschehen, so schaltet sich das Steuergerät ab und die Messwerte nach erneutem Anschalten sind nicht mehr konsistent mit den vorher aufgenommenen.
 Es ist daher davon abzusehen, testweise die Spannung zu erhöhen.
 
+Bei der Durchführung kann man ab und zu einem Blick auf die Röhre werfen, da nach dem ersten Einbruch des Stromes dort eine schwach leuchtende Scheibe zu sehen ist.
+Dies ist bei dem Aufbau mit der \chemical{Hg}-Röhre nicht der Fall, da dort die Emmision nicht im sichtbaren Bereich liegt.
 
 \section{Auswertung}
 \label{sec:auswertung}
