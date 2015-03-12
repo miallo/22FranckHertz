@@ -2,6 +2,8 @@ reset
 set term epslatex color
 set key top left
 set output 'messwerte.tex'
+set xlabel '$U \propto I_A$ [V]'
+set ylabel '$U_1$ [V]'
 
 #j(x)=j*exp(k*x)+l
 #j=827
