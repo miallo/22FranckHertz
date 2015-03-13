@@ -190,7 +190,7 @@ Es können nun zwei Szenarien eintreten:
 \begin{itemize}
 \item Das Elektron hat weniger Energie, als für den kleinsten Übergang nötig wäre.
 Es kann daher keine Energie abgeben und stößt so total elastisch.
-fedeglich seine Richtung kann sich geändert haben.
+Ledeglich seine Richtung kann sich geändert haben.
 \item Hat das Elektron genügend Energie, so kann es bei einem Stoß ein Teil dessen abgeben um das Atom anzuregen.
 Dies führt dazu, dass das Elektron Energie verliert und also langsamer wird.
 Dies entspricht einem inelastischem Stoß.
@@ -201,15 +201,35 @@ Dieses ist nun positiv geladen und wird Ion genannt.
 Die Energie, welche defür mindestens benötigt wird nennt man \textit{Ionisationsenergie}.
 
 \subsection{Franck-Hertz-Versuch}
-Strahlt man nun durch einen Stoff, so sieht man charakteristische "`Einbrüche"' in der Intensität bei Energien, welche genau einer Anregung in eine höhere Schale entsprechen.
-Diese kann man vermessen um daraus Rückschlüsse über die Schalenstruktur zu erlangen.
+Strahlt man nun durch einen Stoff (hier Neon), so sieht man charakteristische "`Einbrüche"' in der Intensität bei Energien, welche genau einer Anregung in eine höhere Schale entsprechen.
+Diese kann man vermessen um daraus Rückschlüsse über die Schalenstruktur der benutzten Atome zu erlangen.
 Die erwartete Kurve der Elektronen-Energie und damit des Stromes ist in Abb. \ref{fig:theoKurve} zu sehen.
 \begin{figure}[h]
 \centering
 \includegraphics{theoKurve}
-\caption{Theoretisch erwareter Verlauf des Anodenstromes nach \cite[12.03.2015,16 Uhr]{lp22}}
+\caption{Theoretisch erwareter Verlauf des Anodenstromes für eine Hg-Röhre von \cite[12.03.2015,16 Uhr]{lp22}}
 \label{fig:theoKurve}
 \end{figure}
+Man tut dies, in dem man Elektronen mit einer Glühkathode emmitiert und zunächst von der Glühwendel mit einer Raumladungsspannung leicht beschleunigt.
+Die hauptsächliche Beschleunigung findet jedoch erst zwischen den zwei Gittern durch die Beschleugigungsspannung $U_1$ statt.
+Nachdem die Elektronen das zweite Gitter durchquert haben, werden sie von einer kleineren Bremsspannung erneut abgebremst.
+Dies wird gemacht, damit nur Elektronen mit einer genügend hohen Energie die Anode erreichen können.
+
+Die Elektronen haben nach einer Beschleunigung mit der Spannung $U$ eine Energie von 
+\begin{align}
+E=e\cdot U\label{eq:EU}
+\end{align}
+wobei nach \cite[S. 32]{demtroeder2} $e = \SI{1.6022e-19}{\coulomb}$ die Elementarladung darstellt.
+
+Sind die Elektronen nun so stark beschleunigt, dass sie gerade die Atome anregen können, so hat die Wellenlänge des ausgesandten Lichts gerade die Frequenz
+\begin{align}
+e\cdot U=h\cdot \nu \label{eq:eUhnu}
+\end{align}
+
+Die nun verlangsamten Elektronen haben zunächst zu wenig Energie um die Bremsspannung zu überwinden.
+Daher kommt zunächst kaum ein Stromfluss zustande (nur diejenigen Elektronen, welche keine Geschwindigkeit verloren haben kommen durch).
+Ist die Strecke in der Röhre jedoch noch lang genug nach dem Stoß, so können die Elektronen wieder soweit beschleunigt werden, dass sie erneut die kritische Schwelle überschreiten können.
+
 
 \section{Durchführung}
 \label{sec:durchfuehrung}
@@ -245,6 +265,10 @@ Dies ist bei dem Aufbau mit der \chemical{Hg}-Röhre nicht der Fall, da dort die
 \label{fig:messwerte}
 \end{figure}
 In Abb. \ref{fig:messwerte} sind die Messwerte aufgetragen.
+Die eingezeichneten Fehler betragen $(0.02+1\%)\si{\volt}$, da die Schwankungen in Bereichen von $0.02\si\volt$ liegen und das verwendete Messgerät eine Genauigkeit von $1\%$ besitzt.
+
+\subsection{Maxima}
+Die in Abb. \ref{fig:geraden} eingezeichneten Geraden
 
 \section{Diskussion}
 \label{sec:diskussion}

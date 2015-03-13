@@ -5,13 +5,14 @@ set output 'messwerte.tex'
 set xlabel '$U \propto I_A$ [V]'
 set ylabel '$U_1$ [V]'
 
-#j(x)=j*exp(k*x)+l
-#j=827
-#k=-0.017
-#l=5
-#set fit logfile 'log8min.log'
-#fit j(x) '8min.dat' via j,k,l
-p 'Daten.csv' t'Messwerte'#, j(x) t'Fit'
+p 'Daten.csv' u 1:2:(0.01+0.01*$2) w ye t'Messwerte' 
 set output
 
 
+set output 'geraden.tex'
+set xlabel '$U \propto I_A$ [V]'
+set ylabel '$U_1$ [V]'
+f(x)=a*x+b
+fit [:] f(x) 'Daten.csv' u 1:2
+p 'Daten.csv' u 1:2:(0.01+0.01*$2) w ye t'Messwerte' 
+set output
