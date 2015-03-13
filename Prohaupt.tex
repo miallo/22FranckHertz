@@ -269,12 +269,39 @@ Die eingezeichneten Fehler betragen $(0.02+1\%)\si{\volt}$, da die Schwankungen 
 
 \subsection{Maxima}
 Die in Abb. \ref{fig:geraden} eingezeichneten Geraden sind je vom kleinsten bis zum größten Wert gefittet.
+Die sich ergebenden Schnittpunkte sind in Tabelle \ref{tab:maxima} zu finden.
 \begin{figure}[h]
 \centering
 \input{geraden}
 \caption{Gefittete Geraden zur Bestimmung der Maxima}
 \label{fig:geraden}
 \end{figure}
+
+\begin{table}
+\centering
+\begin{tabular}{|c|c|}
+\hline Nr. des Maximums & Position [V] \\\hline\hline
+1	& $17\pm 2 $ \\
+2	& $34\pm 2 $ \\
+3	& $51\pm 2 $ \\\hline
+\end{tabular}
+\caption{Position der Maxima berechnet aus den Schnittpunkten der Geraden aus Abb. \ref{fig:geraden}}
+\label{tab:maxima}
+\end{table}
+
+Aus Tabelle \ref{tab:maxima} ergeben sich Differenzen von $\Delta U_{1,1}=(17\pm 3)\si\volt$ und $\Delta U_{1,2}=(17 \pm 3)\si\volt$ so dass sich insgesamt ein gewichteter Mittelwert von $\Delta U_1=(17\pm 2)\si\volt$ ergibt.
+Daraus lässt sich nach Gleichung \ref{eq:eUhnu} die emmitierte Wellenlänge berechnen:
+\begin{align}
+\frac{c}{\lambda}=\nu &= \frac{e\cdot\Delta U_1}{h}\notag\\
+\Rightarrow \lambda&=\frac{c\cdot h}{e\cdot\Delta U_1}=(73\pm 9)\si{\nano\metre}
+\end{align}
+wobei der Fehler sich aus der Gauß'schen Fehlerfortpflanzung ergibt:
+\begin{align}
+\sigma_\lambda=\frac{c\cdot h}{e\cdot(\Delta U_1)^2}\sigma_{\Delta U_1}\quad .
+\end{align}
+
+Dies scheint auf den ersten Blick nicht mit der Tatsache übereinzustimmen, dass man rötliches Licht dort sehen kann.
+Jedoch ist nach 
 
 \section{Diskussion}
 \label{sec:diskussion}

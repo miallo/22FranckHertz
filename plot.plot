@@ -1,21 +1,22 @@
 reset
+#set term wxt
 set term epslatex color
 set key top left
 set yrange [0:9]
 set output 'messwerte.tex'
-set xlabel '$U \propto I_A$ [V]'
-set ylabel '$U_1$ [V]'
+set ylabel '$U \propto I_A$ [V]'
+set xlabel '$U_1$ [V]'
 
 p 'Daten.csv' u 1:2:(0.01+0.01*$2) w ye t'Messwerte' 
 set output
 
 
 set output 'geraden.tex'
-set xlabel '$U \propto I_A$ [V]'
-set ylabel '$U_1$ [V]'
+set ylabel '$U \propto I_A$ [V]'
+set xlabel '$U_1$ [V]'
+set fit logfile 'fit.log'
 f(x)=a*x+b
 fit [6:17.1] f(x) 'Daten.csv' u 1:2 via a,b
-
 g(x)=c*x+d
 fit [17.2:23] g(x) 'Daten.csv' u 1:2 via c,d
 h(x)=e*x+f
