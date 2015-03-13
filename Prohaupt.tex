@@ -290,7 +290,7 @@ Die sich ergebenden Schnittpunkte sind in Tabelle \ref{tab:maxima} zu finden.
 \end{table}
 
 Aus Tabelle \ref{tab:maxima} ergeben sich Differenzen von $\Delta U_{1,1}=(17\pm 3)\si\volt$ und $\Delta U_{1,2}=(17 \pm 3)\si\volt$ so dass sich insgesamt ein gewichteter Mittelwert von $\Delta U_1=(17\pm 2)\si\volt$ ergibt.
-Daraus lässt sich nach Gleichung \ref{eq:eUhnu} die emmitierte Wellenlänge berechnen:
+Daraus lässt sich nach Gleichung \eqref{eq:eUhnu} die emmitierte Wellenlänge berechnen:
 \begin{align}
 \frac{c}{\lambda}=\nu &= \frac{e\cdot\Delta U_1}{h}\notag\\
 \Rightarrow \lambda&=\frac{c\cdot h}{e\cdot\Delta U_1}=(73\pm 9)\si{\nano\metre}
@@ -301,10 +301,24 @@ wobei der Fehler sich aus der Gauß'schen Fehlerfortpflanzung ergibt:
 \end{align}
 
 Dies scheint auf den ersten Blick nicht mit der Tatsache übereinzustimmen, dass man rötliches Licht dort sehen kann.
-Jedoch ist nach 
+Jedoch relaxiert nach \cite[13.03.2015, 19 Uhr]{UniWuppertal} das Elektron nicht direkt von $E\approx 18.9\si\electronvolt$ in den Grundzustand, sondern fällt zunächst in ein Energieniveau mit $E\approx 16.6\si{\electronvolt}$ und gibt dabei das sichtbare Licht ab.
+Die letzte Emmission ist wieder im nicht sichtbaren Bereich.
 
 \section{Diskussion}
 \label{sec:diskussion}
+Die Kurve aus Abb. \ref{fig:messwerte} zeigt die charakteristischen Merkmale der Franck-Hertz-Kurve.
+Die Maxima in unserem Plot sind schlecht zu erkennen.
+Dies kann mit einer höheren Bremsspannung optimiert werden, was jedoch wieder den Stromfluss verringert, wodurch die Fehler größer werden.
+
+Bei der Messung fiel uns nach dem Wert $U_1=17.5\si\volt$ auf, dass der zuvor aufgenommene Wert der Messung von $U_1=15\si\volt$ um 4\% größer war, als bei dessen erster Aufnahme.
+Daher haben wir ab $U_1=15\si\volt$ die Werte ein zweites Mal vermessen.
+Dies kann man auch in der Kurve erkennen, da dort ein Knick zu sehen ist.
+Die sich ändernden Messwerte lassen sich durch eine noch nicht vollständige Erwärmung der Röhre erklären, da spätere Kontrollen keinerlei nennenswerte Abweichung mehr feststellen konnten.
+Dies spricht dafür, dass für erneute Messungen die Röhre ebenfalls vorgeheizt werden sollte, auch wenn dies laut Praktikumshandbuch bei dem Aufbau mit der Neon-Röhre nicht notwendig sein sollte.
+
+Die berechnete emmitierte Wellenlänge hatte mit $(73\pm9)\si{\nano\metre}$ nur eine Abweichung $0.5$ bzw. $1.3\si{\nano\metre}$ von den Literaturwerten von $73.5$ und $74.3\si{\nano\metre}$.
+Das das Fehlerintervall so groß ist, liegt an der Ungenauigkeit der Bestimmung der Maxima, da die Geradensteigungen Abweichungen von teilweise über $5\%$ hatten.
+
 
 \bibliography{literatur}
 \bibliographystyle{babalpha}
